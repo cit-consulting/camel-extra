@@ -190,23 +190,23 @@
   </pluginRepositories>
 
   <distributionManagement>
-    <snapshotRepository>
-      <id>sonatype-nexus-snapshots</id>
-      <name>Sonatype Nexus Snapshots</name>
-      <url>${sonatypeOssDistMgmtSnapshotsUrl}</url>
-    </snapshotRepository>
     <repository>
-      <id>sonatype-nexus-staging</id>
-      <name>Nexus Release Repository</name>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+      <id>CITCMain</id>
+      <name>CITC Main repo</name>
+      <url>http://maven1.citc.ru/content/repositories/citc-main</url>
     </repository>
+    <snapshotRepository>
+      <id>CITCMainSnapshots</id>
+      <name>CITC Main snapshots repo</name>
+      <url>http://maven1.citc.ru/content/repositories/citc-snapshot</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <scm>
-    <connection>scm:git:https://github.com/camel-extra/camel-extra.git</connection>
-    <developerConnection>scm:git:git@github.com:camel-extra/camel-extra.git
+    <connection>scm:git:https://github.com/cit-consulting/camel-extra.git</connection>
+    <developerConnection>scm:git:git@github.com:cit-consulting/camel-extra.git
     </developerConnection>
-    <url>https://github.com/camel-extra/camel-extra</url>
+    <url>https://github.com/cit-consulting/camel-extra</url>
     <tag>HEAD</tag>
   </scm>
 
