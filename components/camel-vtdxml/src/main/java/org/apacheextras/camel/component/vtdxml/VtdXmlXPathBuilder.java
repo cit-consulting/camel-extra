@@ -275,4 +275,8 @@ public class VtdXmlXPathBuilder implements Expression, Predicate, NamespaceAware
         // noop
     }
 
+    @Override
+    public Map<String, String> getNamespaces() {
+        return namespaces;
+    }
 }

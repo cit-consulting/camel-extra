@@ -27,6 +27,7 @@ import java.util.List;
 import jcifs.smb.SmbException;
 import jcifs.smb.SmbFile;
 
+import org.apache.camel.Message;
 import org.apache.camel.Processor;
 import org.apache.camel.component.file.GenericFile;
 import org.apache.camel.component.file.GenericFileConsumer;
@@ -43,6 +44,11 @@ public class SmbConsumer extends GenericFileConsumer<SmbFile> {
     public SmbConsumer(GenericFileEndpoint<SmbFile> endpoint, Processor processor, GenericFileOperations<SmbFile> operations) {
         super(endpoint, processor, operations);
         this.endpointPath = endpoint.getConfiguration().getDirectory();
+    }
+
+    @Override
+    protected void updateFileHeaders(final GenericFile<SmbFile> genericFile, final Message message) {
+
     }
 
     @Override
