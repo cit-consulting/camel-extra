@@ -26,7 +26,7 @@
   <parent>
     <groupId>org.apache-extras.camel-extra</groupId>
     <artifactId>examples</artifactId>
-    <version>2.18.3-CITC2-SNAPSHOT</version>
+    <version>2.18.5-CITC3</version>
   </parent>
 
   <artifactId>camel-example-hibernate</artifactId>
